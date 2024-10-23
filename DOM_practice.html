@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getAttribute Example</title>
+</head>
+<body>
+    <h1>THE TITLE OF YOUR WEBPAGE</h1>
+    <div id="container"></div>
+
+      
+    <script>
+        const container = document.querySelector("#container");
+        
+        const para = document.createElement("p")
+        para.classList.add("para");
+        para.textContent = "hey im red"
+        para.style.color = "red"
+        container.appendChild(para)
+
+        const h = document.createElement("h3")
+        h.textContent = "I'm a blue h3"
+        h.style.color = "blue"
+        container.appendChild(h)
+
+        const divvv = document.createElement("div")
+        divvv.classList.add("divvv")
+        divvv.style.border = "2px solid black"
+        divvv.style.backgroundColor = "pink"
+        
+
+        const divh = document.createElement("h1")
+        divh.textContent = "im in a div"
+        divvv.appendChild(divh)
+
+        const divp = document.createElement("p")
+        divp.textContent = "ME TOO"
+        divvv.appendChild(divp)
+
+        container.appendChild(divvv)
+
+    </script>
+</body>
+</html>
